@@ -12,7 +12,28 @@ class AppCoordinator: Coordinator {
     var children: [Coordinator] = []
     weak var parent: Coordinator?
     
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
     func start() {
+        startAuthorizationFlow()
+    }
+    
+    private func startAuthorizationFlow() {
+        let authCoordinator = AuthorizationCoordinator(navigationController: navigationController, delegate: self)
+        add(authCoordinator)
+        authCoordinator.start()
+    }
+    
+    private func startTabBar() {
         
+    }
+}
+
+extension AppCoordinator: AuthorizationCoordinable {
+    func didAuthorize() {
+        navigationController?.popViewController(animated: false)
+        startTabBar()
     }
 }

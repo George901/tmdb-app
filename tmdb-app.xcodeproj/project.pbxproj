@@ -28,6 +28,7 @@
 		5E83F4B729DEC8DA00281BE0 /* TVShows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E83F4B629DEC8DA00281BE0 /* TVShows.storyboard */; };
 		5E83F4B929DEC90C00281BE0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83F4B829DEC90C00281BE0 /* NetworkService.swift */; };
 		5E83F4BB29DEC93000281BE0 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83F4BA29DEC93000281BE0 /* DatabaseService.swift */; };
+		5E83F4BE29DED2FC00281BE0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83F4BD29DED2FC00281BE0 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		5E83F4B629DEC8DA00281BE0 /* TVShows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVShows.storyboard; sourceTree = "<group>"; };
 		5E83F4B829DEC90C00281BE0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5E83F4BA29DEC93000281BE0 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		5E83F4BD29DED2FC00281BE0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		5E83F48829DEB54700281BE0 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				5E83F4BC29DED2E700281BE0 /* ViewModel */,
 				5E83F48D29DEB5B000281BE0 /* View */,
 				5E83F48B29DEB58C00281BE0 /* Coordinator */,
 				5E83F48929DEB55C00281BE0 /* Authorization.storyboard */,
@@ -240,6 +243,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		5E83F4BC29DED2E700281BE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E83F4BD29DED2FC00281BE0 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +329,7 @@
 				5E83F49F29DEBAAE00281BE0 /* TabBarCoordinator.swift in Sources */,
 				5E83F4AF29DEBF9600281BE0 /* RootCoordinableViewController.swift in Sources */,
 				5E83F47429DEB4C000281BE0 /* AppDelegate.swift in Sources */,
+				5E83F4BE29DED2FC00281BE0 /* LoginViewModel.swift in Sources */,
 				5E83F49D29DEBA9900281BE0 /* TabBarController.swift in Sources */,
 				5E83F4AA29DEBEF300281BE0 /* BaseViewController.swift in Sources */,
 				5E83F4BB29DEC93000281BE0 /* DatabaseService.swift in Sources */,
